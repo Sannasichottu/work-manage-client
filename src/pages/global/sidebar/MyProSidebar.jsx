@@ -15,6 +15,12 @@ import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import IosShareIcon from '@mui/icons-material/IosShare';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 
+
+import MarkunreadMailboxTwoToneIcon from '@mui/icons-material/MarkunreadMailboxTwoTone';
+import CallReceivedTwoToneIcon from '@mui/icons-material/CallReceivedTwoTone';
+import TipsAndUpdatesTwoToneIcon from '@mui/icons-material/TipsAndUpdatesTwoTone';
+import ClassTwoToneIcon from '@mui/icons-material/ClassTwoTone';
+
 // import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 // import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 // import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
@@ -209,7 +215,55 @@ const MyProSidebar = () => {
               setSelected={setSelected}
             />
 
-
+<Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 20px 5px 20px" }}
+            >
+              Admin
+            </Typography>
+            <Item
+              title="Dashboard"
+              to="/admin"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Received Customer"
+              to="/admin/receivedCustomer"
+              icon={<MarkunreadMailboxTwoToneIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Received Vendor"
+              to="/admin/receivedVendor"
+              icon={<CallReceivedTwoToneIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Forward Customer"
+              to="/admin/sendCustomer"
+              icon={<IosShareIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Update Quotation"
+              to="/admin/updateQuotation"
+              icon={<TipsAndUpdatesTwoToneIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Category"
+              to="/admin/category"
+              icon={<ClassTwoToneIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
             {/* <Typography
               variant="h6"
               color={colors.grey[300]}
