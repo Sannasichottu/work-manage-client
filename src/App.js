@@ -23,7 +23,7 @@ import SendList from "./components/customer/sendList/SendList";
 import ReceivedList from "./components/customer/recivedList/ReceivedList";
 
 
-import Dashboard from "./pages/dashboard";
+// import Dashboard from "./pages/dashboard";
 import ReceivedCustomer from "./components/admin/receivedCustomer/ReceivedCustomer"
 import ReceivedVendor from "./components/admin/receivedVendor/ReceivedVendor"
 import SendCustomer from "./components/admin/sendCustomer/SendCustomer"
