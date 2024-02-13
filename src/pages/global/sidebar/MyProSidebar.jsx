@@ -218,6 +218,13 @@ const MyProSidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+             <Item
+              title="Category"
+              to="/admin/category"
+              icon={<ClassTwoToneIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
             <Item
               title="Received Customer"
               to="/admin/receivedCustomer"
@@ -232,13 +239,7 @@ const MyProSidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
-              title="Forward Customer"
-              to="/admin/sendCustomer"
-              icon={<IosShareIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+           
             <Item
               title="Update Quotation"
               to="/admin/updateQuotation"
@@ -246,13 +247,14 @@ const MyProSidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
-              title="Category"
-              to="/admin/category"
-              icon={<ClassTwoToneIcon />}
+             <Item
+              title="Forward Customer"
+              to="/admin/sendCustomer"
+              icon={<IosShareIcon />}
               selected={selected}
               setSelected={setSelected}
             />
+           
             <Typography
               variant="h6"
               color={colors.grey[300]}
