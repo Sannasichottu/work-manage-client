@@ -16,19 +16,20 @@ import Line from "./pages/line";
 import Pie from "./pages/pie";
 import FAQ from "./pages/faq";
 import Geography from "./pages/geography";
-
 import UserProfile from "./components/customer/userProfile/UserProfile";
 import AddItem from "./components/customer/addItem/AddItem";
 import SendList from "./components/customer/sendList/SendList";
 import ReceivedList from "./components/customer/recivedList/ReceivedList";
 
-
-// import Dashboard from "./pages/dashboard";
 import ReceivedCustomer from "./components/admin/receivedCustomer/ReceivedCustomer"
 import ReceivedVendor from "./components/admin/receivedVendor/ReceivedVendor"
 import SendCustomer from "./components/admin/sendCustomer/SendCustomer"
 import UpdateQuotation from "./components/admin/updateQuotation/UpdateQuotation"
 import Category from "./components/admin/category/Category";
+
+import ReceivedAdmin from "./components/Vendor/ReceivedAdmin";
+import InvoiceForm from "./components/Vendor/invoice/InvoiceForm"
+import ForwardAdmin from "./components/Vendor/ForwardAdmin";
 
 const App = () => {
   const [theme, colorMode] = useMode();
@@ -41,22 +42,25 @@ const App = () => {
             <main>
               <Topbar />
               <Routes>
-                {/* <Route path="/" element={<Dashboard />} /> */}
+               
                 <Route path="/" element={<UserProfile />} />
                 <Route path="/customer/userProfile" element={<UserProfile />} />
                 <Route path="/customer/addItem" element={<AddItem/>} />
                 <Route path="/customer/sendList" element={<SendList />} />
                 <Route path="/customer/receivedList" element={<ReceivedList/>} />
 
-                
-                {/* <Route path="/admin" element={<Dashboard />} /> */}
-                <Route path="/admin" element={<ReceivedCustomer/>} />
+
+                <Route path="/admin" element={<ReceivedCustomer />} />
                 <Route path="/admin/receivedCustomer" element={<ReceivedCustomer />} />
                 <Route path="/admin/receivedVendor" element={<ReceivedVendor/>} />
                 <Route path="/admin/sendCustomer" element={<SendCustomer />} />
                 <Route path="/admin/updateQuotation" element={<UpdateQuotation />} />
                 <Route path="/admin/category" element={<Category />} />
 
+
+                <Route path="/vendor/receivedAdmin" element={<ReceivedAdmin />} />
+                <Route path="/vendor/invoiceForm" element={<InvoiceForm />} />
+                <Route path="/vendor/sendAdmin" element={<ForwardAdmin />} />
 
                 <Route path="/team" element={<Team />} />
                 <Route path="/contacts" element={<Contacts />} />
