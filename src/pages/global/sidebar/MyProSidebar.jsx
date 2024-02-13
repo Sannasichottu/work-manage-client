@@ -11,15 +11,15 @@ import { useTheme, Box, Typography, IconButton } from "@mui/material";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import NoteAddIcon from '@mui/icons-material/NoteAdd';
-import IosShareIcon from '@mui/icons-material/IosShare';
-import FactCheckIcon from '@mui/icons-material/FactCheck';
+import NoteAddIcon from "@mui/icons-material/NoteAdd";
+import IosShareIcon from "@mui/icons-material/IosShare";
+import FactCheckIcon from "@mui/icons-material/FactCheck";
 
-import MarkunreadMailboxTwoToneIcon from '@mui/icons-material/MarkunreadMailboxTwoTone';
-import CallReceivedTwoToneIcon from '@mui/icons-material/CallReceivedTwoTone';
-import TipsAndUpdatesTwoToneIcon from '@mui/icons-material/TipsAndUpdatesTwoTone';
-import ClassTwoToneIcon from '@mui/icons-material/ClassTwoTone';
-import ReceiptIcon from '@mui/icons-material/Receipt';
+import MarkunreadMailboxTwoToneIcon from "@mui/icons-material/MarkunreadMailboxTwoTone";
+import CallReceivedTwoToneIcon from "@mui/icons-material/CallReceivedTwoTone";
+import TipsAndUpdatesTwoToneIcon from "@mui/icons-material/TipsAndUpdatesTwoTone";
+import ClassTwoToneIcon from "@mui/icons-material/ClassTwoTone";
+import ReceiptIcon from "@mui/icons-material/Receipt";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import SwitchRightOutlinedIcon from "@mui/icons-material/SwitchRightOutlined";
@@ -142,7 +142,9 @@ const MyProSidebar = () => {
                   alt="profile user"
                   width="100px"
                   height="100px"
-                  src={"https://thumbs.dreamstime.com/b/vector-illustration-icons-logo-car-details-car-service-auto-parts-store-flat-design-vector-illustration-icons-logo-car-248443504.jpg"}
+                  src={
+                    "https://thumbs.dreamstime.com/b/vector-illustration-icons-logo-car-details-car-service-auto-parts-store-flat-design-vector-illustration-icons-logo-car-248443504.jpg"
+                  }
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
@@ -153,7 +155,7 @@ const MyProSidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                 Work Order Manage
+                  Work Order Manage
                 </Typography>
               </Box>
             </Box>
@@ -167,7 +169,7 @@ const MyProSidebar = () => {
               setSelected={setSelected}
             />
 
-<Typography
+            <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 20px 5px 20px" }}
@@ -202,7 +204,7 @@ const MyProSidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-<Typography
+            <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 20px 5px 20px" }}
@@ -251,7 +253,7 @@ const MyProSidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-<Typography
+            <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 20px 5px 20px" }}

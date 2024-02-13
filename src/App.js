@@ -30,6 +30,8 @@ import Category from "./components/admin/category/Category";
 import ReceivedAdmin from "./components/Vendor/ReceivedAdmin";
 import InvoiceForm from "./components/Vendor/invoice/InvoiceForm"
 import ForwardAdmin from "./components/Vendor/ForwardAdmin";
+import SignUp from "./components/auth/SignUp";
+import SignIn from "./components/auth/SignIn";
 
 const App = () => {
   const [theme, colorMode] = useMode();
@@ -42,7 +44,9 @@ const App = () => {
             <main>
               <Topbar />
               <Routes>
-               
+              <Route path="/" element={<SignUp />} />
+                <Route path="/signin" element={<SignIn />} />
+                <Route path="/signup" element={<SignUp />} />
                 <Route path="/" element={<UserProfile />} />
                 <Route path="/customer/userProfile" element={<UserProfile />} />
                 <Route path="/customer/addItem" element={<AddItem/>} />
